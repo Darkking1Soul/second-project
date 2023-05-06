@@ -1,0 +1,22 @@
+$mdSpacing: 20px;
+$darkPrymery: #252525;
+$ligth: #fff;
+
+@mixin flexBox($space){
+    display: flex;
+    justify-content: $space;
+}
+
+@mixin setSize($width, $margin){
+    width: $width;
+    margin: $margin;
+}
+
+@mixin setColorHover($color, $hover){
+    color: $color;
+    transition: 0.3s all linear;
+
+    &:hover{
+        color: $hover;
+    }
+}
